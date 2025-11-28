@@ -4,6 +4,7 @@ namespace ShopPC.Models
 {
     public class ProductModel
     {
+        [Key]
         public int Id { get; set; }
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập tên sản phẩm")]
         public string Name { get; set; }
@@ -16,5 +17,6 @@ namespace ShopPC.Models
         public int CategoryId { get; set; }
         public CategoryModel Category { get; set; }
         public BrandModel Brand { get; set; }
+        public string Image { get; internal set; }
     }
 }

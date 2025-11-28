@@ -13,5 +13,7 @@ namespace ShopPC.Models
         [Required]
         public string Slug { get; set; }
         public string Status { get; set; }
+
+        
     }
 }
